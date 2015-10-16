@@ -19,6 +19,10 @@ namespace WpfStockChart
     /// </summary>
     public partial class StaticStockCharts : Window
     {
+        private ChartStyle cs;
+        private DataCollection dc;
+        private DataSeries ds;
+        private TextFileReader tfr;
         public StaticStockCharts()
         {
             InitializeComponent();

@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ChartStyle.cs" />
+    <Compile Include="DataSeries.cs" />
     <Compile Include="MovingAverage.xaml.cs">
       <DependentUpon>MovingAverage.xaml</DependentUpon>
     </Compile>

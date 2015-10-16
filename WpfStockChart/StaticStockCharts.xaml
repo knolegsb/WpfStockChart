@@ -31,9 +31,18 @@
             <TextBlock Text="Ymax" Margin="10,5,5,5"></TextBlock>
             <TextBox x:Name="txYmax" Text="36" Width="50" TextAlignment="Center" Margin="5"></TextBox>
             <TextBlock Text="YTick" Margin="10,5,5,5"></TextBlock>
-            <TextBox x:Name="txYTick" Text="1" Width="50" TextAlignment="Center" Margin="5"></TextBox>
-            
+            <TextBox x:Name="txYTick" Text="1" Width="50" TextAlignment="Center" Margin="5"></TextBox>            
         </StackPanel>
 
+        <TextBlock Margin="2" Name="tbYLabel" Grid.Column="0" Grid.Row="1" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Text="Y Axis">
+            <TextBlock.LayoutTransform>
+                <RotateTransform Angle="-90"/>
+            </TextBlock.LayoutTransform>
+        </TextBlock>
+        <Grid Margin="0,0,0,0" x:Name="chartGrid" Grid.Column="1" Grid.Row="1" ClipToBounds="False" Background="Transparent" SizeChanged="chartGrid_SizeChanged">
+        </Grid>
+        <Canvas Margin="2" Name="textCanvas" Grid.Column="1" Grid.Row="1" ClipToBounds="True">
+            <Canvas Name="chartCanvas" ClipToBounds="True"></Canvas>
+        </Canvas>
     </Grid>
 </Window>
