@@ -27,5 +27,20 @@ namespace WpfStockChart
         {
             InitializeComponent();
         }
+
+        private void chartGrid_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+
+        }
+
+        private void LoadFile_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
